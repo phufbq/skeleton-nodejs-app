@@ -4,8 +4,11 @@ function processQuery(query) {
 	if (query.includes("Romeo")) {
 		return "William Shakespeare";
 	}
-	else if (query.includes("What is 6 plus 3")) {
-		return 9;
+	else if (query.includes("plus")) {
+		var words = str.split(" ");
+		var int1 = words[2]
+		var int2 = words[4]
+		return int1 + int2;
 	}
 	else if (query.includes("what is your name")) {
 		return "Phil"
