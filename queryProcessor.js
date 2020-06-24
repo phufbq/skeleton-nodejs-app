@@ -115,18 +115,18 @@ function isPrime(n) {
 	return isPrime;
  }
 
- function fibonacci(n){
-	if (n===1) 
-	{
-		return [0, 1];
-	} 
-	else 
-	{
-		var s = fibonacci(n - 1);
-		s.push(s[s.length - 1] + s[s.length - 2]);
-		return s;
-	}
-};
+//  function fibonacci(n){
+// 	if (n===1) 
+// 	{
+// 		return [0, 1];
+// 	} 
+// 	else 
+// 	{
+// 		var s = fibonacci(n - 1);
+// 		s.push(s[s.length - 1] + s[s.length - 2]);
+// 		return s;
+// 	}
+// };
 
 module.exports = {
 	processQuery : processQuery
