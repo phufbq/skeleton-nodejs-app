@@ -6,9 +6,19 @@ function processQuery(query) {
 	}
 	else if (query.includes("plus")) {
 		var words = query.split(" ");
-		var int1 = words[2]
-		var int2 = words[4]
-		return int1 + int2;
+
+		var results = new Array();
+		for (i = 0; i < numbers.length; i++) {
+			if(isNumber(numbers[i])) {
+				results.push(numbers[i])
+			}
+		}
+
+		var sum = results.reduce(function(a, b){
+			return a + b;
+		}, 0);
+
+		return sum;
 	}
 	else if (query.includes("multiply")) {
 		var words = query.split(" ");
@@ -59,8 +69,8 @@ function processQuery(query) {
 	else return "";
 }
 
-function getTheIntegers(item, index) {
-  
+function isNumber(item) {
+  return Number(item);
 }
 
 function subStrAfterChars(str, char, pos)
