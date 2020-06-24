@@ -5,7 +5,7 @@ function processQuery(query) {
 		return "William Shakespeare";
 	}
 	else if (query.includes("plus")) {
-		var words = str.split(" ");
+		var words = query.split(" ");
 		var int1 = words[2]
 		var int2 = words[4]
 		return int1 + int2;
