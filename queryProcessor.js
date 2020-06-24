@@ -56,10 +56,10 @@ function processQuery(query) {
 
 		return results;
 	}
-	else if (query.includes("Fibonacci")) {
-		var position = query.split(" ")[3];
-		return fibonacci(position).slice(-1)[0]
-	}
+	// else if (query.includes("Fibonacci")) {
+	// 	var position = query.split(" ")[3];
+	// 	return fibonacci(position).slice(-1)[0]
+	// }
 
 	else if (query.includes("largest")) {
 		var words = query.split(" ");
