@@ -47,8 +47,6 @@ function processQuery(query) {
 	else return "";
 }
 
-fruits.forEach(myFunction);
-
 function getTheIntegers(item, index) {
   
 }
