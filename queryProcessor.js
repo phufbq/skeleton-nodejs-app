@@ -56,6 +56,10 @@ function processQuery(query) {
 
 		return results;
 	}
+	else if (query.includes("Fibonacci")) {
+		var position = query.split(" ")[3];
+		return fibonacci(position).slice(-1)[0]
+	}
 
 	else if (query.includes("largest")) {
 		var words = query.split(" ");
@@ -110,6 +114,19 @@ function isPrime(n) {
 	// Finally return whether n is prime or not.
 	return isPrime;
  }
+
+ function fibonacci(n){
+	if (n===1) 
+	{
+		return [0, 1];
+	} 
+	else 
+	{
+		var s = fibonacci(n - 1);
+		s.push(s[s.length - 1] + s[s.length - 2]);
+		return s;
+	}
+};
 
 module.exports = {
 	processQuery : processQuery
