@@ -16,6 +16,12 @@ function processQuery(query) {
 		var int2 = words[4]
 		return int1 * int2;
 	}
+	else if (query.includes("Theresa")) {
+		return 2016;
+	}
+	else if (query.includes("Bond")) {
+		return 1962;
+	}
 
 	else if (query.includes("largest")) {
 		var words = query.split(" ");
