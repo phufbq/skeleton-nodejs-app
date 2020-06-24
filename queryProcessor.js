@@ -4,8 +4,10 @@ function processQuery(query) {
 	if (query.includes("Romeo")) {
 		return "William Shakespeare";
 	}
-	else if (query.includes("what is your name"))
-	return "Phil";
+	else if (query.includes("what is your name")) {
+		return "Phil"
+	}
+	else return "";
 }
 
 module.exports = {
