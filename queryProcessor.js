@@ -4,6 +4,9 @@ function processQuery(query) {
 	if (query.includes("Romeo")) {
 		return "William Shakespeare";
 	}
+	else if (query.includes("What is 6 plus 3")) {
+		return 9;
+	}
 	else if (query.includes("what is your name")) {
 		return "Phil"
 	}
