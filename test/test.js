@@ -10,7 +10,7 @@ describe('queryProcessor.js', function () {
     });
 
     it('gives empty response when cannot process query', function () {
-      assert.equal("", qp.processQuery("How long is a piece of string?"));
+      assert.equal("", qp.processQuery("How long is a piece of string???"));
     });
   });
 });
