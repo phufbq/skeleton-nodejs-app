@@ -4,7 +4,7 @@ function processQuery(query) {
 	if (query.includes("Romeo")) {
 		return "William Shakespeare";
 	}
-	else if (query.includes("plus") || query.includes("multiply")) {
+	else if (query.includes("plus")) {
 		var words = query.split(" ");
 		var int1 = words[2]
 		var int2 = words[4]
